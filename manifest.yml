@@ -1,0 +1,4 @@
+---
+applications:
+- name: tasos-sha256
+  memory: 128M

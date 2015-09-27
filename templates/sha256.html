@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Python Flask Starter Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td style= "width:5%;">
+        <td>
+            <h1>Enter your string</h1>
+            <h2>I'll calculate it's SHA256 hash!</h2>
+            <form action="/sha256" method="POST">
+                <input type="text" name="text">
+                <input type="submit" name="my-form" value="Send">
+            </form>
+            <p>
+                Input:<br> 
+                <span class = "hotpink">{{ in1 }}</span> <br>
+                Output:<br>
+                <span class = "hotpink">{{ out1 }}</span><br>
+            </p>
+
+            <p><a href="/">Take me home!</a></p>
+    </table>
+
+
+  </body>
+    <div id="footer">
+    <p>Hosted by <a target="_blank" href="http://www.ibm.com/cloud-computing/bluemix/">IBM Bluemix</a><br>
+    Created by <a href="mailto:tasosk@gmail.com">Tasos Keliris</a> <br>
+    Code available in <a href="">Github</a></p>
+  </div>
+</html>
